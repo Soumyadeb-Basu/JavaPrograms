@@ -7,10 +7,10 @@ public class Stream_Operations {
 
     public static void main(String[] args) {
 
-        Employee e1= new Employee(1,"Ramesh", "Manager");
-        Employee e2= new Employee(2,"Jatin", "HR");
-        Employee e3= new Employee(3,"Ankit", "RMG");
-        Employee e4= new Employee(4,"Sujoy", "CEO");
+        Employee e1= new Employee(1,"Ramesh", "Manager",12000.0);
+        Employee e2= new Employee(2,"Jatin", "HR",16000.0);
+        Employee e3= new Employee(3,"Ankit", "RMG",18000.0);
+        Employee e4= new Employee(4,"Sujoy", "CEO",21000.0);
 
         List<Employee> list= Arrays.asList(e1,e2,e3,e4);
 

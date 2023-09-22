@@ -6,10 +6,13 @@ public class Employee {
     private String name;
     private String designation;
 
-    public Employee(int id, String name, String designation) {
+    private double salary;
+
+    public Employee(int id, String name, String designation, double salary) {
         this.id = id;
         this.name = name;
         this.designation = designation;
+        this.salary=salary;
     }
 
     @Override
@@ -18,7 +21,16 @@ public class Employee {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", designation='" + designation + '\'' +
+                ", salary=" + salary +
                 '}';
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
 
     public int getId() {
