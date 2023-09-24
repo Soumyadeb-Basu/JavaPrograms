@@ -2,7 +2,7 @@ package Java8Features.Streams;
 
 import java.util.Arrays;
 
-public class Stream_match_example {
+public class Stream_find_match_example {
 
     public static void main(String[] args) {
 
@@ -12,6 +12,11 @@ public class Stream_match_example {
         System.out.println(Arrays.stream(A).allMatch(x->x<10));
         //anyMatch checks if any of the elements of stream matches the predicate condition
         System.out.println(Arrays.stream(A).anyMatch(x->x>10));
+        //Finding first element-- returns OptionalInt
+        System.out.println(Arrays.stream(A).findFirst().getAsInt());
+        //Finding any random element-- returns OptionalInt
+        System.out.println(Arrays.stream(A).findAny().getAsInt());
+
 
 
     }
