@@ -1,7 +1,9 @@
 package Java8Features.Streams;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class MaxAndMinNumbersInStream {
 
@@ -17,5 +19,15 @@ public class MaxAndMinNumbersInStream {
                 .get();
 
         System.out.println(maxNumber+" and "+minNumber);
+        System.out.println("--------");
+        //Three max and three min numbers
+
+        Stream<Integer> minStream= list1.stream().sorted().limit(3);
+        minStream.forEach(System.out::println);
+        System.out.println("--------");
+        Stream<Integer> maxStream= list1.stream().sorted(Comparator.reverseOrder()).limit(3);
+        maxStream.forEach(System.out::println);
+
+
     }
 }
