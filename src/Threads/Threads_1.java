@@ -27,6 +27,7 @@ public class Threads_1 {
         B th2 = new B();
 
         th1.start();
+       // th1.start();
         th2.start();
     }
 

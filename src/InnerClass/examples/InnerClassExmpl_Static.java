@@ -8,7 +8,7 @@ public class InnerClassExmpl_Static {
 
     }
 
-    static class Inner {
+    public static class Inner {
 
         public void Inner() {
 
@@ -18,4 +18,8 @@ public class InnerClassExmpl_Static {
 
     }
 
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+    }
 }
